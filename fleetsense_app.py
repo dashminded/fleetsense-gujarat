@@ -158,36 +158,57 @@ st.markdown("""
 #  DATA LOADING
 # ══════════════════════════════════════════════════════════════
 
+# @st.cache_data
+# def load_data():
+#     """Load all 4 CSVs. Update DATA_PATH to your folder."""
+#     DATA_PATH = "E:/New Projects/Fleet Management/"   # ← update if needed
+
+#     df       = pd.read_csv(DATA_PATH + "daily_bookings.csv",   parse_dates=["date"])
+#     routes   = pd.read_csv(DATA_PATH + "routes.csv")
+#     buses    = pd.read_csv(DATA_PATH + "bus_inventory.csv")
+#     festivals= pd.read_csv(DATA_PATH + "festivals.csv")
+
+#     # Try loading forecast if it exists (generated from Jupyter notebook)
+#     try:
+#         forecast = pd.read_csv(DATA_PATH + "fleet_forecast_90days.csv",
+#                                parse_dates=["forecast_date"])
+#     except FileNotFoundError:
+#         forecast = None
+
+#     return df, routes, buses, festivals, forecast
+
+# df, routes_df, buses_df, festivals_df, forecast_df = load_data()
+
 @st.cache_data
 def load_data():
-    """Load all 4 CSVs. Update DATA_PATH to your folder."""
-    # DATA_PATH = "E:/New Projects/Fleet Management/"   # ← update if needed
+    """Load all CSVs from local / Streamlit repo (data folder)."""
+
     import os
-    import pandas as pd
 
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     DATA_PATH = os.path.join(BASE_DIR, "data")
 
-    df = pd.read_csv(os.path.join(DATA_PATH, "daily_bookings.csv"), parse_dates=["date"])
-    routes   = pd.read_csv(os.path.join(DATA_PATH + "routes.csv"))
-    buses    = pd.read_csv(os.path.join(DATA_PATH + "bus_inventory.csv"))
-    festivals= pd.read_csv(os.path.join(DATA_PATH + "festivals.csv"))
+    df        = pd.read_csv(os.path.join(DATA_PATH, "daily_bookings.csv"), parse_dates=["date"])
+    routes    = pd.read_csv(os.path.join(DATA_PATH, "routes.csv"))
+    buses     = pd.read_csv(os.path.join(DATA_PATH, "bus_inventory.csv"))
+    festivals = pd.read_csv(os.path.join(DATA_PATH, "festivals.csv"))
 
-    # Try loading forecast if it exists (generated from Jupyter notebook)
+    # Optional forecast file
     try:
-        forecast = pd.read_csv(DATA_PATH + "fleet_forecast_90days.csv",
-                               parse_dates=["forecast_date"])
+        forecast = pd.read_csv(
+            os.path.join(DATA_PATH, "fleet_forecast_90days.csv"),
+            parse_dates=["forecast_date"]
+        )
     except FileNotFoundError:
         forecast = None
 
     return df, routes, buses, festivals, forecast
 
-df, routes_df, buses_df, festivals_df, forecast_df = load_data()
-
-
 # ══════════════════════════════════════════════════════════════
 #  HELPER FUNCTIONS
 # ══════════════════════════════════════════════════════════════
+
+df, routes_df, buses_df, festivals_df, forecast_df = load_data()
 
 ROUTE_NAMES   = sorted(df["route_name"].unique().tolist())
 ROUTE_TIER    = df.drop_duplicates("route_name").set_index("route_name")["route_tier"].to_dict()
