@@ -161,12 +161,17 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load all 4 CSVs. Update DATA_PATH to your folder."""
-    DATA_PATH = "E:/New Projects/Fleet Management/"   # ← update if needed
+    # DATA_PATH = "E:/New Projects/Fleet Management/"   # ← update if needed
+    import os
+    import pandas as pd
 
-    df       = pd.read_csv(DATA_PATH + "daily_bookings.csv",   parse_dates=["date"])
-    routes   = pd.read_csv(DATA_PATH + "routes.csv")
-    buses    = pd.read_csv(DATA_PATH + "bus_inventory.csv")
-    festivals= pd.read_csv(DATA_PATH + "festivals.csv")
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    DATA_PATH = os.path.join(BASE_DIR, "data")
+
+    df = pd.read_csv(os.path.join(DATA_PATH, "daily_bookings.csv"), parse_dates=["date"])
+    routes   = pd.read_csv(os.path.join(DATA_PATH + "routes.csv"))
+    buses    = pd.read_csv(os.path.join(DATA_PATH + "bus_inventory.csv"))
+    festivals= pd.read_csv(os.path.join(DATA_PATH + "festivals.csv"))
 
     # Try loading forecast if it exists (generated from Jupyter notebook)
     try:
