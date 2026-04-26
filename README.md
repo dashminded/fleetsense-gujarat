@@ -198,5 +198,5 @@ fleetsense-gujarat/
 This project was self-initiated after observing how Gujarat private bus
 operators manage fleets without any data infrastructure.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](YOUR_LINKEDIN_HERE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](YOUR_GITHUB_HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)]www.linkedin.com/in/ashutosh772
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)]https://github.com/dashminded
