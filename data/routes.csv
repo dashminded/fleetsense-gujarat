@@ -1,0 +1,13 @@
+route_id,route_name,origin,destination,distance_km,route_tier,base_buses_per_day,base_nonac_price_inr
+1,AMD→Surat,Ahmedabad,Surat,265,Tier1,8,250
+2,AMD→Rajkot,Ahmedabad,Rajkot,215,Tier1,7,200
+3,AMD→Vadodara,Ahmedabad,Vadodara,110,Tier1,10,120
+4,AMD→Bhuj,Ahmedabad,Bhuj,340,Tier2,5,450
+5,AMD→Jamnagar,Ahmedabad,Jamnagar,318,Tier2,4,420
+6,AMD→Junagadh,Ahmedabad,Junagadh,320,Tier2,4,400
+7,AMD→Dwarka,Ahmedabad,Dwarka,450,Tier2,3,550
+8,AMD→Somnath,Ahmedabad,Somnath,400,Tier2,3,500
+9,AMD→Porbandar,Ahmedabad,Porbandar,390,Tier3,3,480
+10,AMD→Gandhidham,Ahmedabad,Gandhidham,360,Tier3,3,470
+11,Rajkot→Surat,Rajkot,Surat,360,Tier2,4,450
+12,Surat→Vadodara,Surat,Vadodara,155,Tier2,5,180
