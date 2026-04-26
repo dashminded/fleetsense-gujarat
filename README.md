@@ -13,7 +13,7 @@
 
 ## Problem Statement
 
-Gujarat's private bus operators (Patel Travels, Shah Travels, etc.) deploy
+Gujarat's private bus operators (Patel Travels, Swaminarayan Travels, etc.) deploy
 buses based on intuition — no data system exists for route-level planning.
 This causes two losses simultaneously:
 
@@ -76,18 +76,18 @@ Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 
 | Route | MAE | RMSE |
 |-------|-----|------|
-| AMD→Surat | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Rajkot | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Vadodara | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Bhuj | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Jamnagar | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Junagadh | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Dwarka | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Somnath | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Porbandar | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| AMD→Gandhidham | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| Rajkot→Surat | ADD_AFTER_RUN | ADD_AFTER_RUN |
-| Surat→Vadodara | ADD_AFTER_RUN | ADD_AFTER_RUN |
+| AMD→Gandhidham | 12.99% | 15.67% |
+| AMD→Bhuj | 11.23% | 15.19% |
+| AMD→Dwarka | 6.47% | 9.72% |
+| AMD→Jamnagar | 6.24% | 9.50% |
+| AMD→Porbandar | 6.46% | 9.27% |
+| Rajkot→Surat | 6.24% | 9.15% |
+| AMD→Somnath | 5.88% | 9.06% |
+| AMD→Junagadh | 5.99% | 8.96% |
+| AMD→Surat | 4.84% | 8.89% |
+| Surat→Vadodara | 5.74% | 8.84% |
+| AMD→Rajkot | 4.66% | 8.47% |
+| AMD→Vadodara | 4.88% | 8.47% |
 
 > MAE and RMSE reported on occupancy rate (0.0–1.0 scale).
 > e.g. RMSE = 0.06 means forecast is off by ~6 percentage points on average.
