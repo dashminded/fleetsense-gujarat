@@ -1,4 +1,4 @@
-# 🚌 FleetSense Gujarat
+# FleetSense Gujarat
 ### Demand-Driven Bus Fleet Optimization for Gujarat Private Operators
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://python.org)
@@ -7,11 +7,11 @@
 [![Prophet](https://img.shields.io/badge/Prophet-Forecasting-blue)](https://facebook.github.io/prophet)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)](https://powerbi.microsoft.com)
 
-**🔗 Live App:** [LIVE_LINK_HERE](LIVE_LINK_HERE)
+**Live App:** https://fleetsense.streamlit.app/
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Gujarat's private bus operators (Patel Travels, Shah Travels, etc.) deploy
 buses based on intuition — no data system exists for route-level planning.
@@ -26,7 +26,7 @@ private operators. This project builds one.
 
 ---
 
-## 🎯 What This Project Does
+## What This Project Does
 
 Given a **route** and a **date**, FleetSense tells the operator:
 - How full the bus is expected to be (forecasted occupancy %)
@@ -35,7 +35,7 @@ Given a **route** and a **date**, FleetSense tells the operator:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Tool |
 |-------|------|
@@ -47,7 +47,7 @@ Given a **route** and a **date**, FleetSense tells the operator:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 > **Synthetic data** simulated from real-world research — ticket prices from
 > AbhiBus/RedBus listings, actual Gujarat festival dates (2023–2024), real
@@ -70,7 +70,7 @@ Rajkot→Surat · Surat→Vadodara
 
 ---
 
-## 🔮 Prophet Forecast Accuracy
+## Prophet Forecast Accuracy
 
 Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 
@@ -94,7 +94,7 @@ Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Streamlit App — Single Day Forecast
 ![Streamlit App](screenshots/streamlit_forecast.png)
@@ -107,7 +107,7 @@ Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 
 ---
 
-## 🗄️ SQL Layer
+##  SQL Layer
 
 **Database:** `fleetsense_gujarat` | **Tables:** `routes`, `bus_inventory`, `festivals`, `daily_bookings`
 
@@ -124,7 +124,7 @@ Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 
 ---
 
-## 🚀 Run Locally
+##  Run Locally
 
 ```bash
 # 1. Clone the repo
@@ -146,7 +146,7 @@ jupyter notebook notebook/FleetSense_Gujarat.ipynb
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fleetsense-gujarat/
@@ -177,7 +177,7 @@ fleetsense-gujarat/
 
 ---
 
-## 💡 Key Business Insights
+## Key Business Insights
 
 - **Navratri + Diwali** push occupancy 30%+ above the normal day average —
   adding 2 buses on major routes during these periods generates ~₹8,000–14,000
@@ -191,7 +191,7 @@ fleetsense-gujarat/
 
 ---
 
-## 👤 About
+##  About
 
 **Ashutosh** — MCA Fresher | Ahmedabad, Gujarat | Targeting Data Analyst roles
 
