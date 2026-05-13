@@ -9,7 +9,8 @@
 
 **Live App:** https://fleetsense.streamlit.app/
 
-![Power BI](screenshots/fleet_ds.png)
+### Power BI Dashboard
+![Power BI Dashboard](screenshots/fleet_ds.png)
 
 ---
 
@@ -95,17 +96,6 @@ Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 > e.g. RMSE = 0.06 means forecast is off by ~6 percentage points on average.
 
 ---
-
-## Screenshots
-
-### Streamlit App — Single Day Forecast
-![Streamlit App](screenshots/streamlit_forecast.png)
-
-### Streamlit App — Route Analytics
-![Route Analytics](screenshots/streamlit_analytics.png)
-
----
-
 ##  SQL Layer
 
 **Database:** `fleetsense_gujarat` | **Tables:** `routes`, `bus_inventory`, `festivals`, `daily_bookings`
