@@ -9,6 +9,8 @@
 
 **Live App:** https://fleetsense.streamlit.app/
 
+![Power BI](screenshots/fleet_ds.png)
+
 ---
 
 ## Problem Statement
@@ -101,9 +103,6 @@ Trained on Jan 2023 – Sep 2024 | Tested on Oct – Dec 2024 (held-out quarter)
 
 ### Streamlit App — Route Analytics
 ![Route Analytics](screenshots/streamlit_analytics.png)
-
-### Power BI Dashboard
-![Power BI](screenshots/powerbi_dashboard.png)
 
 ---
 
