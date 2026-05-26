@@ -69,7 +69,7 @@ AMD→Surat · AMD→Rajkot · AMD→Vadodara · AMD→Bhuj · AMD→Jamnagar ·
 AMD→Junagadh · AMD→Dwarka · AMD→Somnath · AMD→Porbandar · AMD→Gandhidham ·
 Rajkot→Surat · Surat→Vadodara
 
-**Simulated business scale:** ₹72 Cr revenue · ₹41 Cr cost · ₹30 Cr profit (2 years)
+**Simulated business scale:** ₹72.20 Cr revenue · ₹41.74 Cr cost · ₹30.46 Cr profit (2 years)
 
 ---
 
