@@ -10,7 +10,7 @@
 **Live App:** https://fleetsense.streamlit.app/
 
 ### Power BI Dashboard
-![Power BI Dashboard](fleet_ds.png)
+![Power BI Dashboard](fleetsense_dash.png)
 
 ---
 
